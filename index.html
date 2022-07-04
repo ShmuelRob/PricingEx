@@ -34,41 +34,65 @@
             <hgroup>
                 <h1>Pricing</h1>
                 <h2>Quickly build an effective pricing table for your potential customers with this Bootstrap example.
-                    It’s
+                    It's
                     built with default Bootstrap components and utilities with little customization.</h2>
             </hgroup>
-            <div>
+            <div id="cards-container">
                 <div class="card">
-                    <!-- <div class="back"> --><h4>Free</h4> <!--</div> -->
+                    <h4>Free</h4>
                     <div class="card-content">
-                        <div><span class="money">$0</span><span class="month">/mo</span></div>
-                        <div>10 users included
-                            2 GB of storage
-                            Email support
-                            Help center access</div>
-                        <div><button>Sign up for free</button></div>
+                        <div>
+                            <span class="money">$0</span><span class="month">/mo</span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>10 users included</li>
+                                <li>2 GB of storage</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#"><button type="button" class="white-button">Sign up for free</button></a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <h4>Pro</h4>
                     <div class="card-content">
-                        <div><span class="money">$15</span><span class="month">/mo</span></div>
-                        <div>20 users included
-                            10 GB of storage
-                            Priority email support
-                            Help center access</div>
-                        <div><button>Get started</button></div>
+                        <div>
+                            <span class="money">$15</span><span class="month">/mo</span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>20 users included</li>
+                                <li>10 GB of storage</li>
+                                <li>Priority email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#"><button type="button" class="blue-button">Get started</button></a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <h4 id="blue-back">Enterprise</h4>
                     <div class="card-content">
-                        <div><span class="money">$29</span><span class="month">/mo</span></div>
-                        <div>30 users included
-                            15 GB of storage
-                            Phone and email support
-                            Help center access</div>
-                        <div><button>Contact us</button></div>
+                        <div>
+                            <span class="money">$29</span><span class="month">/mo</span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#"><button type="button" class="blue-button">Contact us</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,37 +107,37 @@
                             <td>Enterprise</td>
                         </tr>
                         <tr>
-                            <td>Public</td>
+                            <td class="first-in-table">Public</td>
                             <td>V</td>
                             <td>V</td>
                             <td>V</td>
                         </tr>
                         <tr>
-                            <td>Private</td>
+                            <td class="first-in-table">Private</td>
                             <td></td>
                             <td>V</td>
                             <td>V</td>
                         </tr>
                         <tr>
-                            <td>Permissions</td>
+                            <td class="first-in-table">Permissions</td>
                             <td>V</td>
                             <td>V</td>
                             <td>V</td>
                         </tr>
                         <tr>
-                            <td>Sharing</td>
+                            <td class="first-in-table">Sharing</td>
                             <td></td>
                             <td>V</td>
                             <td>V</td>
                         </tr>
                         <tr>
-                            <td>Unlimited members</td>
+                            <td class="first-in-table">Unlimited members</td>
                             <td></td>
                             <td>V</td>
                             <td>V</td>
                         </tr>
                         <tr>
-                            <td>Extra security</td>
+                            <td class="first-in-table">Extra security</td>
                             <td></td>
                             <td></td>
                             <td>V</td>
@@ -122,40 +146,42 @@
                 </table>
             </div>
         </main>
+        <hr>
         <footer>
-            <img>
-            <small>© 2017-2022</small>
+            <div>
+                <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" width="24" height="19">
+                <br><small>© 2017-2022</small>
+            </div>
             <div>
                 <h3>Features</h3>
                 <ul>
-                    <li>Cool stuff</li>
-                    <li>Random feature</li>
-                    <li>Team feature</li>
-                    <li>Stuff for developers</li>
-                    <li>Another one</li>
-                    <li>Last time</li>
+                    <a href="#"><li>Cool stuff</li></a>
+                    <a href="#"><li>Random feature</li></a>
+                    <a href="#"><li>Team feature</li></a>
+                    <a href="#"><li>Stuff for developers</li></a>
+                    <a href="#"><li>Another one</li></a>
+                    <a href="#"><li>Last time</li></a>
                 </ul>
             </div>
             <div>
                 <h3>Resources</h3>
                 <ul>
-                    <li>Resource</li>
-                    <li>Resource name</li>
-                    <li>Another Resources</li>
-                    <li>Final resource</li>
+                    <a href="#"><li>Resource</li></a>
+                    <a href="#"><li>Resource name</li></a>
+                    <a href="#"><li>Another Resources</li></a>
+                    <a href="#"><li>Final resource</li></a>
                 </ul>
             </div>
             <div>
                 <h3>About</h3>
                 <ul>
-                    <li>Team</li>
-                    <li>Locations</li>
-                    <li>Privacy Terms</li>
+                    <a href="#"><li>Team</li></a>
+                    <a href="#"><li>Locations</li></a>
+                    <a href="#"><li>Privacy Terms</li></a>
                 </ul>
             </div>
         </footer>
     </div>
-
 </body>
 
 </html>

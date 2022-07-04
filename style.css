@@ -9,8 +9,8 @@ body {
 }
 
 #container {
-    margin-left:  18%;
-    margin-right: 18%;
+    margin-left: 12%;
+    margin-right: 12%;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -48,6 +48,7 @@ hr {
 
 main {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -63,25 +64,52 @@ h2 {
     font-size: 1.25rem;
 }
 
+hgroup {
+    position: relative;
+}
+
 hgroup h2 {
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     line-height: 1.85rem;
     color: #666;
 }
 
+#cards-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
 .card {
+    position: relative;
+    width: 35%;
     border-radius: 8px;
-    border: 00.001rem solid #ccc;
+    border: 00.001rem solid #aaa;
     overflow: hidden;
     margin: 0.6rem;
     padding-bottom: 0.6rem;
 }
-.card-content {
-    padding-left:  25%;
-    padding-right: 25%;
 
+@media only screen and (max-width: 800px) {
+    #cards-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 98%;
+    }
+}
+
+.card-content {
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 div h4 {
+    flex-grow: 1;
     font-size: 1.5rem;
     font-weight: 400;
     margin-top: 0;
@@ -106,9 +134,91 @@ div h4 {
     color: rgba(33, 37, 41, 0.75);
 }
 
+button {
+    flex-grow: 1;
+    margin-top: 4%;
+    margin-bottom: 0;
+    width: 100%;
+    height: 30%;
+    border: 1px solid rgb(13, 110, 253);
+    border-radius: 8px;
+    font-size: 1.25rem;
+}
+
+.card div {
+    flex-grow: 4;
+}
+
+.white-button {
+    color: rgb(13, 110, 253);
+    background-color: white;
+}
+
+.white-button:hover {
+    color: white;
+    background-color: rgb(13, 110, 253);
+}
+
+.blue-button {
+    color: white;
+    background-color: rgb(13, 110, 253);
+}
+
+.blue-button:hover {
+    color: white;
+    background-color: rgb(10, 95, 255);
+}
+
+div>h1 {
+    font-weight: 200;
+}
+
 h3 {
     font-weight: 600;
     margin-bottom: 0.5rem;
+}
+
+table {
+    font-weight: bold;
+    width: 100%;
+    /* border: 1px solid #aaa; */
+}
+
+table, tr {
+    /* border: 1px solid black; */
+    border-bottom: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    border-collapse: collapse;
+}
+
+footer {
+    margin-top: 1rem;
+    display: flex;
+    color: #666;
+    justify-content: space-around;
+}
+
+td {
+    width: 22%;
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h3 {
+    color: #000;
+}
+
+.first-in-table {
+    width: 34%;
+    text-align: left;
+}
+
+footer>div {
+    margin: 0.5rem;
 }
 
 ul {
